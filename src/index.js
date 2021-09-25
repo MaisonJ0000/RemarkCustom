@@ -1,3 +1,5 @@
+import { visit } from 'unist-util-visit';
+
 function customPlugin() {
   return (tree) => {
     visit(tree, (node) => {
