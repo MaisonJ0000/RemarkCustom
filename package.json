@@ -6,7 +6,8 @@
   "type": "module",
   "scripts": {
     "test": "NODE_OPTIONS=--experimental-vm-modules npx jest",
-    "build": "npx babel src --out-dir dist"
+    "build": "npx babel src --out-dir dist",
+    "prepare": "npm run build"
   },
   "author": "",
   "license": "ISC",
