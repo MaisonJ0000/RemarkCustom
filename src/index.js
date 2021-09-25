@@ -1,7 +1,7 @@
 import { visit } from 'unist-util-visit';
 
 function customPlugin() {
-  return (tree) => {
+  return (/** @type {any} */ tree) => {
     visit(tree, (node) => {
       if (
         node.type === 'textDirective' ||
